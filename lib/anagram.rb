@@ -7,9 +7,7 @@ class Anagram
   end
 
   def match(arr)
-    arr.select do |item|
-      word_sort(item) == word_sort(@word)
-    end
+    arr.select {|item| word_sort(item) == word_sort(@word)}
   end
 
   def word_sort(word)
